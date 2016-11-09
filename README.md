@@ -1,6 +1,6 @@
 #MyRetail REST API
 
-MyRetail  API provides client application ability to:
+MyRetail RESTful service provides client application ability to:
 
     1. Retrieve Product and Price information by Product Id
 
@@ -46,8 +46,7 @@ Technologies Used
 
 1. Spring Boot - https://projects.spring.io/spring-boot/
 2. MongoDB - https://www.mongodb.com/
-3. Gradle - https://gradle.org/
-4. Swagger - http://swagger.io/
+3. Swagger - http://swagger.io/
 
 Instructions to Setup
 ---------------------
@@ -67,6 +66,21 @@ The testcases are present in the folder 'src\test\java\myretail\controllers'.
 
 The test cases can be executed by running the command './gradlew test'
 
+Swagger UI:
+----------
+Swagger displays the following information for an API method by default. Please refer to images 'Default_GetProductInfo.png'
+and 'Default_PutRequest.png' to see how the default information for an API method looks like in Swagger.
+
+  1. Type of request(GET/PUT..) and the path of request
+  2. Status and format of the response
+  3. Response Content Type
+  4. Parameters list
+  5. Possible Failure Responses with HTTP code
+
+The user can modify the values in the fields provided and can do "Try it out!" at the bottom. Please refer to the images 
+'Sample_GET_Success.png' and 'Sample_PUT_Success.png' to see what a sample GET and PUT requests look like.
+
+More information about the API methods and the responses is provided below.
 
 API Requests and Responses
 --------------------------
