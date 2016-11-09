@@ -30,7 +30,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    // tag::jetty[]
+
     compile("org.springframework.boot:spring-boot-starter-web") {
         exclude module: "spring-boot-starter-tomcat"
     }
@@ -38,11 +38,9 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-jetty")
     compile 'io.springfox:springfox-swagger-ui:2.6.1'
     compile "io.springfox:springfox-swagger2:2.6.1"
-    // end::jetty[]
-    // tag::actuator[]
+
     compile("org.springframework.boot:spring-boot-starter-actuator")
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('com.jayway.restassured:spring-mock-mvc:2.8.0')
-    // end::actuator[]
     testCompile("junit:junit")
 }
