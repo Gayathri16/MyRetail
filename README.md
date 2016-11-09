@@ -1,6 +1,6 @@
 #MyRetail REST API
 
-MyRetail RESTful service provides client application ability to:
+MyRetail  API provides client application ability to:
 
     1. Retrieve Product and Price information by Product Id
 
@@ -46,7 +46,8 @@ Technologies Used
 
 1. Spring Boot - https://projects.spring.io/spring-boot/
 2. MongoDB - https://www.mongodb.com/
-3. Swagger - http://swagger.io/
+3. Gradle - https://gradle.org/
+4. Swagger - http://swagger.io/
 
 Instructions to Setup
 ---------------------
