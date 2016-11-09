@@ -1,6 +1,6 @@
 #MyRetail REST API
 
-MyRetail  API provides client application ability to:
+MyRetail RESTful service provides client application ability to:
 
     1. Retrieve Product and Price information by Product Id
 
