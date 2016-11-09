@@ -6,10 +6,10 @@ MyRetail RESTful service provides client application ability to:
 
     2. Send request to modify the price information in the database
 
-Get Product Information:
+##Get Product Information:
 -----------------------
 
-Input: The client application does a GET request at the path "/products/{id}" for a product 
+**Input: The client application does a GET request at the path "/products/{id}" for a product 
 
 Internal Working: When the API receives the request, it sends a request to "redsky.target.com" and retrieves the 
 product information. This product information doesn't contain price that is needed by the user. The price is retrieved
@@ -24,7 +24,7 @@ Errors/Validations: Appropriate error messages are provided after validating the
 the below sections. The client application can use the message in the response to display the same to the user appropriately.
 
 
-Update Product Price in the datastore:
+##Update Product Price in the datastore:
 -------------------------------------
 
 Input: The user/client application can do a PUT request with input similar to the response received in GET and should be able
@@ -41,7 +41,7 @@ Output: Success message is returned if the price modification is done.
 Errors/Validations: Appropriate error messages are provided after validating the data. More information is available in 
 the below sections. The client application can use the message in the response to display the same to the user appropriately.
 
-Technologies Used
+##Technologies Used
 -----------------
 
 1. Spring Boot - https://projects.spring.io/spring-boot/
@@ -49,7 +49,7 @@ Technologies Used
 3. Swagger - http://swagger.io/
 4. Gradle - https://gradle.org
 
-Instructions to Setup
+##Instructions to Setup
 ---------------------
 1. Install MongoDB in your system - https://docs.mongodb.com/manual/installation/
 2. Install Gradle - https://gradle.org/gradle-download/
@@ -62,13 +62,13 @@ Instructions to Setup
 `http://localhost:8080/swagger-ui.html`
 8. Swagger documentation explains the expected request and response for GET and PUT requests.
 
-Testing
+##Testing
 -------
 The testcases are present in the folder 'src\test\java\myretail\controllers'. 
 
 The test cases can be executed by running the command './gradlew test'
 
-Swagger UI:
+##Swagger UI:
 ----------
 Swagger displays the following information for an API method by default. Please refer to images 'Default_GetProductInfo.png'
 and 'Default_PutRequest.png' to see how the default information for an API method looks like in Swagger.
@@ -84,7 +84,7 @@ The user can modify the values in the fields provided and can do "Try it out!" a
 
 More information about the API methods and the responses is provided below.
 
-API Requests and Responses
+##API Requests and Responses
 --------------------------
 ## PUT Request:
 
@@ -154,21 +154,21 @@ Following PUT request will store information of productID:13860428 in NOSQL data
    >"path": "/products/235345436"
  >}
  
- Swagger Screenshots for the RESTful API:
+ ##Swagger Screenshots for the RESTful API:
  ---------------------------------------
 
- Default GET Request Information in Swagger UI
+ ###Default GET Request Information in Swagger UI
  ---------------------------------
  ![Alt text](/Default_GetProductInfo.png?raw=true "Default GET Information")
 
- Sample GET Response  in Swagger UI
+ ###Sample GET Response  in Swagger UI
  --------------------------------------------
  ![Alt text](/Sample_GET_Success.png?raw=true "Sample GET Response")
 
- Default PUT Request Information in Swagger UI
+ ###Default PUT Request Information in Swagger UI
  ---------------------------------------------
  ![Alt text](/Default_PutRequest.png?raw=true "Default POST Information")
 
- Sample PUT Response in Swagger UI
+ ###Sample PUT Response in Swagger UI
  ---------------------------------
  ![Alt text](/Sample_PUT_Success.png?raw=true "Sample POST Response")
