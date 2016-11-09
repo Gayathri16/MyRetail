@@ -47,18 +47,20 @@ Technologies Used
 1. Spring Boot - https://projects.spring.io/spring-boot/
 2. MongoDB - https://www.mongodb.com/
 3. Swagger - http://swagger.io/
+4. Gradle - https://gradle.org
 
 Instructions to Setup
 ---------------------
 1. Install MongoDB in your system - https://docs.mongodb.com/manual/installation/
-2. Run MongoDB.
-3. Clone the code from git.
-4. Navigate to MyRetail directory.
-5. Run the following command to start
+2. Install Gradle - https://gradle.org/gradle-download/
+3. Run MongoDB - Run 'mongod.exe' in order to start Mongodb 
+4. Clone the code from git repository - https://github.com/Gayathri16/MyRetail.git
+5. Make sure you are in the MyRetail directory
+6. Run the following command to start
 `./gradlew bootRun`
-6. Open browser and visit Swagger.
+7. Open browser and visit Swagger.
 `http://localhost:8080/swagger-ui.html`
-7. Swagger documentation explains the expected request and response for GET and PUT requests.
+8. Swagger documentation explains the expected request and response for GET and PUT requests.
 
 Testing
 -------
