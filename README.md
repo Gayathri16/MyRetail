@@ -1,6 +1,6 @@
 #MyRetail REST API
 
-MyRetail RESTful service provides client application ability to:
+MyRetail RESTful service provides the client application ability to:
 
     1. Retrieve Product and Price information by Product Id
 
@@ -9,36 +9,45 @@ MyRetail RESTful service provides client application ability to:
 ##Get Product Information:
 -----------------------
 
-**Input: The client application does a GET request at the path "/products/{id}" for a product 
+###Input: 
+The client application does a GET request at the path "/products/{id}" for a product 
 
-Internal Working: When the API receives the request, it sends a request to "redsky.target.com" and retrieves the 
+###Internal Working: 
+When the API receives the request, it sends a request to "redsky.target.com" and retrieves the 
 product information. This product information doesn't contain price that is needed by the user. The price is retrieved
 from a data store. The price information is now combined with the required product information to provide only the 
 required product information to the user.
 
-Output: For a product with product id '13860428', the sample JSON output is as shown below
+###Output: 
+For a product with product id '13860428', the sample JSON output is as shown below
 
 {"id":13860428,"name":"The Big Lebowski (Blu-ray) (Widescreen)","current_price":{"value": 13.49,"currency_code":"USD"}}
 
-Errors/Validations: Appropriate error messages are provided after validating the data. More information is available in 
+###Errors/Validations: 
+Appropriate error messages are provided after validating the data. More information is available in 
 the below sections. The client application can use the message in the response to display the same to the user appropriately.
 
 
 ##Update Product Price in the datastore:
 -------------------------------------
 
-Input: The user/client application can do a PUT request with input similar to the response received in GET and should be able
+###Input: 
+The user/client application can do a PUT request with input similar to the response received in GET and should be able
 to modify the price in the datastore. The request is done at the same path "/products/{id}"
 
-Sample Input: JSON Body - {"id":13860428,"name":"The Big Lebowski (Blu-ray) (Widescreen)","current_price":{"value": 15.67,"currency_code":"USD"}}
+####Sample Input: 
+JSON Body - {"id":13860428,"name":"The Big Lebowski (Blu-ray) (Widescreen)","current_price":{"value": 15.67,"currency_code":"USD"}}
 
-Internal Working: When the API receives PUT request, it does some validations to see if the product is available. If it is, 
+###Internal Working: 
+When the API receives PUT request, it does some validations to see if the product is available. If it is, 
 it ensures that the id in the URL and the JSON body is similar and if that looks same, the price for the product is modified 
 in the data store.
 
-Output: Success message is returned if the price modification is done.
+###Output: 
+Success message is returned if the price modification is done.
 
-Errors/Validations: Appropriate error messages are provided after validating the data. More information is available in 
+###Errors/Validations: 
+Appropriate error messages are provided after validating the data. More information is available in 
 the below sections. The client application can use the message in the response to display the same to the user appropriately.
 
 ##Technologies Used
