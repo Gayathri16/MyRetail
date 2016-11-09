@@ -154,3 +154,7 @@ Following PUT request will store information of productID:13860428 in NOSQL data
    >"path": "/products/235345436"
  >}
  
+ Swagger Screenshots for the RESTful API:
+ ---------------------------------------
+
+ ![Alt text](/Default_GetProductInfo.png?raw=true "Default GET Information")
